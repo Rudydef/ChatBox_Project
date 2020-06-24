@@ -4,10 +4,16 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
+	
+	//*********************************************************************
+	//AJOUTER UNE FONCTION RECUSRIVE QUI PERMETTRAIT DE REPOSER LA QUESTION 
+	//LORSQUE L'UTILISATEUR SOUHAITERA POSER UNE NOUVELLE QUESTION
+	//*********************************************************************
+	
+	
 
 	public static void main(String[] args) throws IOException {
 		String reponse = "";
-		String answerUser = "";
 		String answerBot = "";
 
 		ChatSession chat = new ChatSession("Bonjour, que puis-je faire pour vous?");
@@ -51,42 +57,6 @@ public class Main {
 
 		} while (reponse.contains("oui"));
 		
-
-
-		//		System.out.println("Bot: Désirez-vous autre chose?");
-		//		System.out.print("User:> ");
-		//		String answerUser = reader.readLine(); 
-		//
-		//
-		//		if (answerUser.contains("oui")) {
-		//			System.out.println("Bot: Posez moi une nouvelle question ");
-		//			System.out.print("User:> ");
-		//			String newQuestionUser = reader.readLine();
-		//			System.out.println("Bot: " + chat.getAnswer(newQuestionUser));
-		//			System.out.println("Bot: Désirez-vous autre chose?");
-		//			System.out.print("User:> ");
-		//
-		//
-		//		} else if (answerUser.contains("non")) {
-		//			System.out.println("Bot: Aurevoir!");
-		//			System.exit(0);
-		//		}
-		//
-		//		String NewAnswerUser = reader.readLine();
-		//
-		//		do {  
-		//
-		//			if (NewAnswerUser.contains("oui")) {
-		//				System.out.println("Bot: Désirez-vous autre chose?");
-		//				System.out.print("User:> ");
-		//				String newQuestionUser = reader.readLine();
-		//				System.out.println("Bot: " + chat.getAnswer(newQuestionUser));
-		//			} else if(NewAnswerUser.contains("non")){
-		//				System.out.println("Bot: Aurevoir!");
-		//				System.exit(0);	
-		//			}
-		//		}  while (NewAnswerUser.contains("oui"));
-		//
 	}
 
 
